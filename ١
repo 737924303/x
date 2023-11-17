@@ -1,0 +1,31 @@
+
+talk =[]
+talk1=[]
+
+tasks = input("Write down your day's tasks and separate them with a comma: ")
+tasks = tasks.split(",")
+for task in tasks:
+  print(task)
+  Did = input("Did you finish it yes or no? ")
+  if Did == "yes":
+    talk.append(task)
+    print("Good job")
+  elif Did == "no":
+    talk1.append(task)
+    print("Try not to talk to her")
+  else:
+    print("Please write yes or no")
+  
+print("Would you like to see your progress today? yes or no? ")
+answer = input()
+if answer == "yes":
+  print("\n These are the tasks I completed \n")
+  print(talk)
+  print("\n______________")
+  print("\n These are the remaining tasks I need to do \n ")
+  print(talk1)
+  print("\n______________")
+  print("\n Good luck \n")
+  
+else:
+  print("Ok, maybe next time")
